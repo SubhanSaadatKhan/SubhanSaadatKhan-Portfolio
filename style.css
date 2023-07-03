@@ -1,12 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300&display=swap');
+
 *{
     margin: 0;
     padding: 0;
 }
 
+/* home page styling */
+
 .sidebar{
-    background-color: red;
-    width: 12vw;
+    background-color: rgb(128, 128, 128);
+    width: 400px;
     height: 100vh;
     font-family: 'Open Sans', sans-serif;
 }
@@ -21,19 +25,78 @@
     padding: 20px 0;
 }
 
+.sidebar nav li a{
+    text-decoration: none;
+    color: white;
+}
+
 
 .main{
-    background-color: yellow;
+    /* background-color: yellow; */
     width: 88vw;
 }
 
 .infoContainer{
-    background-color: orange;
+    /* background-color: orange; */
     width: 80vw;
-    height: 75vh;
+    height: 55vh;
     margin: 85px auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.devPic img{
+    height: 55vh;
+}
+
+.devInfo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* border: 1px solid green; */
+    font-family: 'Source Code Pro', monospace;
+}
+
+.hello{
+    font-size: 55px;
+}
+
+.name{
+    font-size: 50px;
+    font-weight: bold;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.about{
+    font-size: 35px;
+}
+
+.moreAbout{
+    font-size: 18px;
+    font-family: 'Open Sans', sans-serif;
+    margin-top: 12px;
+}
+
+.buttons button{
+    /* margin-top: 34px; */
+    padding: 9px 12px;
+    border-radius: 22px;
+    color: white;
+    background-color: dodgerblue;
+    font-weight: bold;
+    font-size: 17px;
+    margin: 34px 3px;
+    cursor: pointer;
+}
+
+.buttons button:hover{
+    color: dodgerblue;
+    background-color: white;
 }
 
 .container{
     display: flex;
 }
+
+/* contact page styling */
+
