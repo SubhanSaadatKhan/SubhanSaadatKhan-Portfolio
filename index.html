@@ -6,9 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Subhan Saadat Khan - Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <script src="index.js"></script>
 </head>
 
 <body>
+    <!-- main section -->
     <div id="main">
         <div class="container">
             <nav>
@@ -27,7 +29,75 @@
             </div>
         </div>
     </div>
-   
+
+    <!-- about section -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="img/user.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="subtitle">About Me</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit blanditiis nam pariatur at in quos, nemo ullam recusandae sunt unde vitae minus omnis nulla, rerum assumenda repellat harum repellendus ad atque sed temporibus. Repellat, error.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills', event)">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience', event)">Experience</p>
+                        <p class="tab-links" onclick="opentab('education', event)">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                            <li><span>Web Development</span><br>Web app Development</li>
+                            <li><span>App Development</span><br>Building Android/iOS apps</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2021 - Current</span><br>UI/UX Design Training at ET</li>
+                            <li><span>2019 - 2021</span><br>Team lead at StarApp LLC.</li>
+                            <li><span>2017 - 2019</span><br>UI/UX Desig Executive at Coin Digital Ltd.</li>
+                            <li><span>2016 - 2017</span><br>Internship at ekart eCommerce.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2016</span><br>UI/UX Design Training at ET Institute</li>
+                            <li><span>2016</span><br>MBA from MIT Bnaglore</li>
+                            <li><span>2014</span><br>BBA from ISM Bangalore</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+   <!-- services section -->
+   <div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <h2>Web Design</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit minima sit velit deleniti, natus fugit praesentium quaerat sequi explicabo corporis?</p>
+                <a href="#">learn more</a>
+            </div>
+            <div>
+                <h2>UI/UX Design</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit minima sit velit deleniti, natus fugit praesentium quaerat sequi explicabo corporis?</p>
+                <a href="#">learn more</a>
+            </div>
+            <div>
+                <h2>App Design</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit minima sit velit deleniti, natus fugit praesentium quaerat sequi explicabo corporis?</p>
+                <a href="#">learn more</a>
+            </div>
+        </div>
+    </div>
+   </div>
+
+
 </body>
 
 </html>
