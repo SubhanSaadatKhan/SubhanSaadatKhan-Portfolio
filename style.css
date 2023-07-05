@@ -77,7 +77,11 @@
     margin-top: 12px;
 }
 
-.buttons button{
+.buttons{
+    margin-top: 34px;
+}
+
+.btn{
     /* margin-top: 34px; */
     padding: 9px 12px;
     border-radius: 22px;
@@ -85,11 +89,17 @@
     background-color: dodgerblue;
     font-weight: bold;
     font-size: 17px;
-    margin: 34px 3px;
+    margin: 0px 3px;
     cursor: pointer;
 }
 
-.buttons button:hover{
+.btn-sm{
+    font-size: 15px;
+    margin: 15px 0px;
+    padding: 10px 19px;
+}
+
+.btn:hover{
     color: dodgerblue;
     background-color: white;
 }
@@ -100,3 +110,43 @@
 
 /* contact page styling */
 
+.contactForm{
+    /* border: 1px solid red; */
+    padding: 0px 35px;
+    padding-top: 90px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.contactForm h1{
+    font-family: 'Source Code Pro', monospace;
+    padding: 12px 0px;
+}
+
+.contactForm form div{
+    padding: 7px 0px;
+    display: flex;
+    flex-direction: column;
+}
+
+.contactForm form div input{
+    width: 26vw;
+    border-radius: 5px;
+    margin: 6px 0 0 0;
+    padding: 3px;
+}
+
+#emailHelp{
+    font-size: 12px;
+    color: midnightblue;
+    margin: 0px 5px;
+    padding: 3px 0 0 0;
+}
+
+#form-check{
+    flex-direction: row;
+}
+
+#form-check input{
+    width: 25px;
+    margin: 2px 0px;
+}
