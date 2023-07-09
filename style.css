@@ -380,6 +380,12 @@ form .btn2{
     color: #ff004f;
 }
 
+#msg{
+    color: #61b752;
+    margin-top: -40px;
+    display: block;
+}
+
 /* css for smaller screens (responsiveness) */
 nav .fas{
     display: none;

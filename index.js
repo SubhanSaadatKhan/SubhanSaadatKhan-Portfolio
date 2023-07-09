@@ -2,13 +2,13 @@
 var tabLinks = document.getElementsByClassName("tab-links")
 var tabContents = document.getElementsByClassName("tab-contents")
 
-function opentab(tabName, e){
+function opentab(tabName, e) {
 
-    for(tablink of tabLinks){
+    for (tablink of tabLinks) {
         tablink.classList.remove("active-link")
     }
 
-    for(tabcontent of tabContents){
+    for (tabcontent of tabContents) {
         tabcontent.classList.remove("active-tab")
     }
 
@@ -19,10 +19,17 @@ function opentab(tabName, e){
 // responsiveness (smaller screen)
 var sideMenu = document.getElementsByClassName("sidemenu");
 
-function openMenu(){
+function openMenu() {
     sideMenu[0].style.right = "0";
 }
 
-function closeMenu(){
+function closeMenu() {
     sideMenu[0].style.right = "-200px";
 }
+
+// TODO:
+// add paralax effect in the main page (use position sticky)
+// increase your projects
+// add buttons to main page
+// include any other fun feature in the page
+
