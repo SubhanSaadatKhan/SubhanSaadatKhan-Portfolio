@@ -29,7 +29,12 @@ function closeMenu() {
 
 // TODO:
 // add paralax effect in the main page (use position sticky)
-// increase your projects
-// add buttons to main page
 // include any other fun feature in the page
+
+// 9 men morris
+// frogger arcade Game
+// movie library
+// weather application
+// lets chat appliication
+// run monash
 
