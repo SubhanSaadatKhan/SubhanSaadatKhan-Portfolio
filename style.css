@@ -102,9 +102,11 @@ nav ul li a:hover::after{
 }
 
 .row{
+    justify-content: center;
+    text-align: center;
     /* border: 1px solid red; */
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     flex-wrap: wrap;
 }
 
@@ -119,17 +121,20 @@ nav ul li a:hover::after{
 }
 
 .about-col-2{
+    text-align: center;
     /* border: 1px solid red; */
     flex-basis: 60%;
 }
 
 .subtitle{
+    text-align: center;
     font-size: 60px;
     font-weight: 600;
     color: #fff;
 }
 
 .tab-titles{
+    justify-content: center;
     display: flex;
     margin: 20px 0 40px;
 }
@@ -304,6 +309,8 @@ nav ul li a:hover::after{
     display: grid;
     /* grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); */
     grid-template-columns: auto auto auto;
+    /* grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); */
+    /* grid-template-columns: repeat(auto-fit, minmax(250px, 1fr) 3); */
     grid-gap: 40px;
     margin-top: 50px;
 }
@@ -475,6 +482,13 @@ form .btn2{
     display: block;
 }
 
+/* Add a media query for screens with a maximum width of 1200px */
+@media (max-width: 1200px) {
+    .work-list {
+        grid-template-columns: repeat(2, 1fr); /* Change to 2 columns */
+    }
+}
+
 /* css for smaller screens (responsiveness) */
 nav .fas{
     display: none;
@@ -482,7 +496,7 @@ nav .fas{
 
 @media only screen and (max-width: 600px) {
     #main{
-        background-image: url(img/phone-background.png);
+        background-image: url(img/phone_img.png);
     }
 
     .main-text{
@@ -550,6 +564,13 @@ nav .fas{
 
     .copyright{
         font-size: 14px;
+    }
+
+    /* .layer{
+        display: block;
+    } */
+    .work-list {
+        grid-template-columns: 1fr; /* Change to a single column layout */
     }
 }
 
