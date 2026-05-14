@@ -2,25 +2,41 @@
 <html lang="en">
 
 <head>
-    <!-- mumtaz code -->
-    <!-- Google tag (gtag.js) -->
+    <!-- Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-PR01Q05MS1"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag() { dataLayer.push(arguments); }
         gtag('js', new Date());
-
         gtag('config', 'G-PR01Q05MS1');
     </script>
-    <!-- mumtaz code -->
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Subhan Saadat Khan - Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="index.js"></script>
-    <script src="https://kit.fontawesome.com/2ed6c8f9ce.js" crossorigin="anonymous"></script>
 
+    <title>Subhan Saadat Khan — Data Scientist & ML Engineer</title>
+    <meta name="description" content="Subhan Saadat Khan — Master's student in Data Science (AI & ML) at FAU Erlangen-Nürnberg. Hands-on experience in ML prototyping, data engineering, and Generative AI. Open to Werkstudent, internship, and full-time roles in Germany.">
+    <meta name="keywords" content="Data Scientist, Machine Learning, Python, SQL, FAU Erlangen, Werkstudent, Germany, Data Engineering, AI, LLM">
+    <meta name="author" content="Subhan Saadat Khan">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Subhan Saadat Khan — Data Scientist & ML Engineer">
+    <meta property="og:description" content="Master's student in Data Science (AI & ML) at FAU Erlangen-Nürnberg. Open to Werkstudent, internship, and full-time roles in Germany.">
+    <meta property="og:locale" content="en_GB">
+
+    <!-- Theme -->
+    <meta name="theme-color" content="#0e0e0e">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@300;400&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Favicons -->
     <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
@@ -28,251 +44,410 @@
 </head>
 
 <body>
-    <!-- main section -->
-    <div id="main">
-        <div class="container">
-            <nav>
-                <img src="img/bhai.gif" class="logo">
-                <ul class="sidemenu">
-                    <li><a href="#main">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <i class="fas fa-times" onclick="closeMenu()"></i>
-                </ul>
-                <i class="fas fa-bars" onclick="openMenu()"></i>
-            </nav>
-            <div class="main-text">
-                <h1>Hello 👋, <br> I'm <span>Subhan</span> Saadat</h1>
-                <p class="text-shadow">Software Engineer</p>
-                <a href="#contact" class="btn btn2">Hire Me</a>
-                <a href="#portfolio" class="btn btn2">Explore More</a>
+
+    <!-- NAV -->
+    <nav id="nav" role="navigation" aria-label="Main navigation">
+        <div class="nav-inner">
+            <a href="#hero" class="nav-logo mono" aria-label="Go to top">SSK</a>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#work">Work</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false" onclick="toggleMenu(this)">
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+        <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+            <ul>
+                <li><a href="#about"    onclick="closeMenu()">About</a></li>
+                <li><a href="#services" onclick="closeMenu()">Services</a></li>
+                <li><a href="#work"     onclick="closeMenu()">Work</a></li>
+                <li><a href="#skills"   onclick="closeMenu()">Skills</a></li>
+                <li><a href="#contact"  onclick="closeMenu()">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <section id="hero" aria-label="Introduction">
+        <div class="hero-inner">
+            <p class="hero-eyebrow mono anim-1">Erlangen, Bavaria &middot; Germany</p>
+            <h1 class="hero-name anim-2">Subhan<br>Saadat Khan</h1>
+            <p class="hero-tagline anim-3">
+                Master's student in Data Science (AI&nbsp;&amp;&nbsp;ML) at FAU Erlangen-N&uuml;rnberg
+                with hands-on experience in ML prototyping, data engineering, and Generative AI.
+            </p>
+            <p class="hero-availability mono anim-3">
+                Open to &rarr;&nbsp; Werkstudent &nbsp;&middot;&nbsp; Internship &nbsp;&middot;&nbsp; Full-time
+            </p>
+            <div class="hero-cta anim-4">
+                <a href="#work" class="text-link">see my work</a>
+                <a href="#contact" class="text-link">get in touch</a>
             </div>
         </div>
-    </div>
+    </section>
 
-    <!-- about section -->
-    <div id="about">
-        <div class="container">
-            <div class="row">
-                <div class="about-col-2">
-                    <h1 class="subtitle text-shadow">About Me</h1>
-                    <p>Results-oriented Software Engineer with 2 years of extensive experience in national and regional
-                        tech environments.
-                        Demonstrated expertise in full-cycle software development, adhering to coding standards and best
-                        practices, and
-                        leading successful projects. Skilled in conducting high-impact code reviews and managing
-                        stakeholder requirements.
-                        Equipped with a solid foundation in algorithms, data structures, and software design principles.
-                        Eager to collaborate
-                        with experts, contribute effectively, and gain valuable insights.
-                        <!-- <br>
-                    <br>
-                    To see my problem-solving skills and coding proficiency, visit my  <a href="https://leetcode.com/u/subhansaadat/" target="#" style="color:#ff004f">LeetCode profile</a>. -->
+    <!-- ABOUT -->
+    <section id="about">
+        <div class="section-inner">
+            <span class="section-label mono">01 — About</span>
+
+            <p class="about-bio">
+                Master's student in Data Science (AI&nbsp;&amp;&nbsp;ML) at FAU Erlangen-N&uuml;rnberg with hands-on experience
+                in Python and SQL, exploratory data analysis, and end-to-end ML prototyping. Backend engineering
+                background that includes pulling, cleaning, and joining data from ERP and production databases,
+                building dashboards for non-technical reviewers, and working with Generative AI (GPT-4o, OpenAI API)
+                in real research tools. Equipped with a solid foundation in algorithms, data structures, and software
+                design principles. Eager to collaborate with experts, contribute effectively, and gain valuable insights
+                in a real production setting.
+            </p>
+
+            <div class="about-grid">
+                <div class="about-col">
+                    <span class="col-heading mono">Experience</span>
+                    <ul class="timeline">
+                        <li>
+                            <span class="tl-year mono">Jun 2025 – Present</span>
+                            <span class="tl-role">
+                                Working Student / Research Assistant (HiWi)
+                                <span class="current-tag mono">Current</span>
+                            </span>
+                            <span class="tl-org">Friedrich-Alexander-Universit&auml;t &middot; Nuremberg</span>
+                        </li>
+                        <li>
+                            <span class="tl-year mono">Jan 2024 – Sept 2024</span>
+                            <span class="tl-role">Python Developer (ERP &amp; Data Integration)</span>
+                            <span class="tl-org">ParaLogic &middot; Full-time &middot; Karachi</span>
+                        </li>
+                        <li>
+                            <span class="tl-year mono">Nov 2022 – Feb 2023</span>
+                            <span class="tl-role">Software Development Intern</span>
+                            <span class="tl-org">Tong Hin &middot; Subang Jaya, Malaysia</span>
+                        </li>
+                        <li>
+                            <span class="tl-year mono">Jun 2023 – Jul 2023</span>
+                            <span class="tl-role">Virtual Intern — Market Research</span>
+                            <span class="tl-org">TeaMWork &middot; Monash Warwick Alliance</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="about-col">
+                    <span class="col-heading mono">Education</span>
+                    <ul class="timeline">
+                        <li>
+                            <span class="tl-year mono">Oct 2024 – Present</span>
+                            <span class="tl-role">
+                                Master's in Data Science (AI&nbsp;&amp;&nbsp;ML)
+                                <span class="current-tag mono">Current</span>
+                            </span>
+                            <span class="tl-org">FAU Erlangen-N&uuml;rnberg &middot; Germany</span>
+                        </li>
+                        <li>
+                            <span class="tl-year mono">Feb 2021 – Oct 2023</span>
+                            <span class="tl-role">Bachelor of Computer Science (Data Science)</span>
+                            <span class="tl-org">Monash University &middot; Malaysia</span>
+                        </li>
+                        <li>
+                            <span class="tl-year mono">2020</span>
+                            <span class="tl-role">A-Levels</span>
+                            <span class="tl-org">Nixor College &middot; Pakistan</span>
+                        </li>
+                    </ul>
+
+                    <div class="about-languages">
+                        <span class="col-heading mono">Languages</span>
+                        <ul class="lang-list mono">
+                            <li><span class="lang-name">English</span><span class="lang-level">C1 Advanced</span></li>
+                            <li><span class="lang-name">German</span><span class="lang-level">A2, actively improving</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="services">
+        <div class="section-inner">
+            <span class="section-label mono">02 — Services</span>
+
+            <div class="services-list">
+
+                <div class="service-row">
+                    <div class="service-header">
+                        <h3 class="service-title">Data Science &amp; Machine Learning</h3>
+                    </div>
+                    <p class="service-desc">
+                        End-to-end ML workflows from raw data to evaluated model — exploratory data analysis,
+                        feature engineering, supervised and unsupervised learning, time series analysis, and
+                        anomaly detection. Hands-on experience with scikit-learn, PyTorch, PyTorch Geometric, and
+                        TensorFlow in both academic research and production-adjacent settings. Comfortable
+                        translating findings into clear, business-readable reports and visualizations.
+                    </p>
+                    <div class="service-rule"></div>
+                </div>
+
+                <div class="service-row">
+                    <div class="service-header">
+                        <h3 class="service-title">Data Engineering &amp; Analytics</h3>
+                    </div>
+                    <p class="service-desc">
+                        Data pipeline design and implementation — pulling, cleaning, validating, and joining data
+                        from ERP, CRM, and production databases using Python and SQL. Automated synchronization
+                        through REST APIs, reducing manual data entry by 25% and improving reporting response times
+                        by 40%. Visualization and interactive dashboards with Power BI, Tableau, Matplotlib, and
+                        Folium for both technical teams and non-technical stakeholders.
+                    </p>
+                    <div class="service-rule"></div>
+                </div>
+
+                <div class="service-row">
+                    <div class="service-header">
+                        <h3 class="service-title">Backend &amp; Full-Stack Development</h3>
+                    </div>
+                    <p class="service-desc">
+                        Python-heavy backend development with REST API design, database integration, and business
+                        logic automation. Experience building RESTful APIs in ASP.NET Core, full-stack MERN
+                        applications, and integrating LLM pipelines (GPT-4o, OpenAI API) into production-style
+                        research tooling. Frontend work across React, HTML/CSS, and TypeScript for scalable,
+                        maintainable web products.
+                    </p>
+                    <div class="service-rule"></div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- WORK — DO NOT MODIFY -->
+    <section id="work">
+        <div class="section-inner">
+            <span class="section-label mono">03 — Work</span>
+
+            <div class="project-list">
+
+                <article class="project-row">
+                    <div class="project-header">
+                        <h3 class="project-title">Nine Men's Morris</h3>
+                        <span class="project-stack mono">2022 &middot; Java &middot; Swing</span>
+                    </div>
+                    <p class="project-desc">Desktop application utilising object-oriented design principles to create a fully functional board game with a flexible and responsive GUI built entirely in Java Swing.</p>
+                    <div class="project-rule"></div>
+                </article>
+
+                <article class="project-row">
+                    <div class="project-header">
+                        <h3 class="project-title">Frogger Arcade Game</h3>
+                        <span class="project-stack mono">2022 &middot; TypeScript &middot; RxJS &middot; FRP</span>
+                    </div>
+                    <p class="project-desc">Functional Reactive Programming implementation of the Frogger game, managing all animation and user interaction through RxJS Observable streams.</p>
+                    <div class="project-rule"></div>
+                </article>
+
+                <article class="project-row">
+                    <div class="project-header">
+                        <h3 class="project-title">Movie Library App</h3>
+                        <span class="project-stack mono">2022 &middot; Java &middot; Android Studio</span>
+                    </div>
+                    <p class="project-desc">Mobile application built with RecyclerViews and ListView, backed by a local database for efficient on-device data storage and retrieval.</p>
+                    <div class="project-rule"></div>
+                </article>
+
+                <article class="project-row">
+                    <div class="project-header">
+                        <h3 class="project-title">LetsChat Application</h3>
+                        <span class="project-stack mono">2023 &middot; Node.js &middot; Socket.io</span>
+                    </div>
+                    <p class="project-desc">Full-stack real-time messaging application enabling synchronous two-user communication via WebSocket integration with Socket.io.</p>
+                    <div class="project-rule"></div>
+                </article>
+
+                <article class="project-row">
+                    <div class="project-header">
+                        <h3 class="project-title">Weather Application</h3>
+                        <span class="project-stack mono">2023 &middot; JavaScript &middot; REST API</span>
+                    </div>
+                    <p class="project-desc">Web application that fetches and displays real-time weather data for any city using live third-party API integration and vanilla JavaScript.</p>
+                    <div class="project-rule"></div>
+                </article>
+
+                <article class="project-row">
+                    <div class="project-header">
+                        <h3 class="project-title">Run Monash</h3>
+                        <span class="project-stack mono">2023 &middot; Oracle SQL &middot; RDBMS</span>
+                    </div>
+                    <p class="project-desc">Relational database implementation based on a provided logical model, with full DML operations, schema migrations, and structured data population in Oracle RDBMS.</p>
+                    <div class="project-rule"></div>
+                </article>
+
+            </div>
+
+            <a href="https://github.com/SubhanSaadatKhan" target="_blank" rel="noopener noreferrer" class="text-link github-link">View all on GitHub &rarr;</a>
+        </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills">
+        <div class="section-inner">
+            <span class="section-label mono">04 — Skills</span>
+            <div class="skills-columns">
+
+                <div class="skill-group">
+                    <p class="skill-heading">Languages</p>
+                    <p class="skill-list mono">Python (advanced)<br>SQL (advanced)<br>JavaScript &middot; TypeScript<br>Java &middot; C</p>
+                </div>
+
+                <div class="skill-group">
+                    <p class="skill-heading">Data Science &amp; ML</p>
+                    <p class="skill-list mono">scikit-learn &middot; PyTorch<br>PyTorch Geometric &middot; TensorFlow<br>EDA &middot; Feature Engineering<br>Time Series &middot; Anomaly Detection</p>
+                </div>
+
+                <div class="skill-group">
+                    <p class="skill-heading">Generative AI</p>
+                    <p class="skill-list mono">GPT-4o &middot; OpenAI API<br>Prompt Engineering<br>LLM Integration<br>Human-in-the-Loop AI</p>
+                </div>
+
+                <div class="skill-group">
+                    <p class="skill-heading">Data Engineering</p>
+                    <p class="skill-list mono">Pandas &middot; NumPy<br>ETL/ELT &middot; REST APIs<br>Docker &middot; Jupyter &middot; Git<br>ERP / CRM Integration</p>
+                </div>
+
+                <div class="skill-group">
+                    <p class="skill-heading">Visualization</p>
+                    <p class="skill-list mono">Power BI &middot; Tableau<br>Matplotlib &middot; Folium<br>Interactive Dashboards</p>
+                </div>
+
+                <div class="skill-group">
+                    <p class="skill-heading">Databases</p>
+                    <p class="skill-list mono">PostgreSQL &middot; SQLite<br>MongoDB &middot; Firebase<br>Oracle RDBMS</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+        <div class="section-inner">
+            <span class="section-label mono">05 — Contact</span>
+
+            <div class="contact-layout">
+                <div class="contact-left">
+                    <p class="contact-intro">
+                        Open to Werkstudent, internship, and full-time roles in Data Science and Machine Learning
+                        across Germany. Reach out directly &mdash; I reply promptly.
                     </p>
 
-                    <div class="tab-titles">
-                        <p class="tab-links active-link" onclick="opentab('skills', event)">Skills</p>
-                        <p class="tab-links" onclick="opentab('experience', event)">Experience</p>
-                        <p class="tab-links" onclick="opentab('education', event)">Education</p>
+                    <div class="contact-details">
+                        <a href="mailto:subhansaadat@gmail.com" class="contact-row">
+                            <span class="contact-key mono">Email</span>
+                            <span class="contact-val">subhansaadat@gmail.com</span>
+                        </a>
+                        <a href="tel:+4915124814197" class="contact-row">
+                            <span class="contact-key mono">Phone</span>
+                            <span class="contact-val">+49 151 24814197</span>
+                        </a>
+                        <span class="contact-row contact-plain">
+                            <span class="contact-key mono">Location</span>
+                            <span class="contact-val">Erlangen, Bavaria, Germany</span>
+                        </span>
+                        <a href="https://www.linkedin.com/in/subhansaadatkhan/" target="_blank" rel="noopener noreferrer" class="contact-row">
+                            <span class="contact-key mono">LinkedIn</span>
+                            <span class="contact-val">subhansaadatkhan</span>
+                        </a>
+                        <a href="https://github.com/SubhanSaadatKhan" target="_blank" rel="noopener noreferrer" class="contact-row">
+                            <span class="contact-key mono">GitHub</span>
+                            <span class="contact-val">SubhanSaadatKhan</span>
+                        </a>
                     </div>
-                    <div class="tab-contents active-tab" id="skills">
-                        <ul>
-                            <li><span>Languages</span><br>Python, Java, JavaScript, TypeScript, C</li>
-                            <li><span>Front-end</span><br>HTML, CSS, React, Swing, WPF</li>
-                            <li><span>Back-end</span><br>Node.js, Firebase, SQL, ASP.NET</li>
-                    </div>
-                    <div class="tab-contents" id="experience">
-                        <ul>
-                            <li><span>Jan 2024 - Sept 2024</span><br>Python Web Developer at <b>ParaLogic</b> -
-                                Full-time</li>
-                            <li><span>Nov 2022 - Feb 2023</span><br>Software Development Engineer at <b>Tong Hin</b> -
-                                Intership</li>
-                            <li><span>Jul 2022 - Oct 2022</span><br>Frontend Developer for <b>Monash UReview</b> -
-                                Part-time
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="tab-contents" id="education">
-                        <ul>
-                            <li><span>2023</span><br>Master of Data Science from <b>FAU Erlangen-Nürnberg</b> - Germany
-                            </li>
-                            <li><span>2023</span><br>Bachelor of Computer Science from <b>Monash University</b> -
-                                Malaysia</li>
-                            <li><span>2020</span><br>A-Levels from <b>Nixor College</b> - Pakistan </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
 
-    <!-- services section -->
-    <div id="services">
-        <div class="container">
-            <h1 class="subtitle text-shadow">My Services</h1>
-            <div class="services-list">
-                <div>
-                    <i class="fa-solid fa-code"></i>
-                    <h2>Software Development</h2>
-                    <p>With over 1 year of experience, I have delivered impactful software solutions that boost
-                        productivity and cut data errors by 20%. My expertise in data structures and algorithms ensures
-                        optimized performance, while a strong grasp of SOLID principles guarantees well-structured code.
-                        Additionally, my experience with business applications like ERPNext has honed my skills in
-                        creating effective solutions for diverse industries.</p>
-                    <!-- <a href="#">Learn more</a> -->
+                    <a href="Subhan_Saadat_Khan_Resume2.pdf" download class="text-link cv-link">Download CV</a>
                 </div>
-                <div>
-                    <i class="fa-brands fa-windows"></i>
-                    <h2>Full-Stack Web Development</h2>
-                    <p>I offer expertise in both frontend (React, Angular) and backend (Node.js, Django) technologies,
-                        including building MERN stack websites. With over 1 year of experience, I excel in optimizing
-                        performance, as demonstrated by a 30% reduction in query response times. My experience managing
-                        both front-end and database systems, combined with up-to-date knowledge of modern technologies,
-                        ensures the delivery of high-quality, scalable websites.</p>
-                    <!-- <a href="#">Learn more</a> -->
-                </div>
-                <div>
-                    <i class="fa-solid fa-mobile-screen-button"></i>
-                    <h2>Mobile App Development</h2>
-                    <p>With a solid foundation in mobile app development from university courses, I create high-quality
-                        apps efficiently. I developed a Movie Library app using Java on Android Studio, leveraging
-                        RecyclerViews and ListView, and setting up a local database. My extensive Java knowledge ensures
-                        robust and reliable mobile applications.</p>
-                </div>
-            </div>
-        </div>
-    </div>
 
-    <!-- portfolio section -->
-    <div id="portfolio">
-        <div class="container">
-            <h1 class="subtitle text-shadow">My Work</h1>
-            <div class="work-list">
-                <div class="work">
-                    <img src="img/work-1.jpg">
-                    <div class="layer">
-                        <h2>Nine Men's Morris</h2>
-                        <p>Developed a desktop application utilizing object-oriented design principles to create a fully
-                            functional
-                            Nine Men's Morris game with a flexible and responsive Graphical User Interface (GUI).
-                            The backend of the application was built using Java, while
-                            Java Swing was employed for designing and implementing the GUI components.</p>
-                        <a href="#"><i class="fa-regular fa-share-from-square"></i></a>
-                    </div>
-                </div>
-                <div class="work">
-                    <img src="img/work-2.jpg">
-                    <div class="layer">
-                        <h2>Frogger Arcade Game</h2>
-                        <p>Applied TypeScript to construct the Frogger game using Functional Reactive Programming (FRP)
-                            techniques.
-                            Managed animation and user interaction through RxJS Observable streams.</p>
-                        <a href="#"><i class="fa-regular fa-share-from-square"></i></a>
-                    </div>
-                </div>
-                <div class="work">
-                    <img src="img/work-3.jpg">
-                    <div class="layer">
-                        <h2>Movie Library App</h2>
-                        <p>Engineered a Movie Library mobile application using Java on Android Studio.
-                            Implemented RecyclerViews and ListView to display movies and set up a local
-                            database for efficient data storage and retrieval.</p>
-                        <a href="#"><i class="fa-regular fa-share-from-square"></i></a>
-                    </div>
-                </div>
-                <div class="work">
-                    <img src="img/work-5.jpg">
-                    <div class="layer">
-                        <h2>LetsChat Application</h2>
-                        <p>Built the frontend and backend of the LetsChat application,
-                            enabling two users to interact synchronously.
-                            Implemented real-time communication using Socket.io
-                            for seamless messaging.</p>
-                        <a href="#"><i class="fa-regular fa-share-from-square"></i></a>
-                    </div>
-                </div>
-                <div class="work">
-                    <img src="img/work-4.jpg">
-                    <div class="layer">
-                        <h2>Weather Application</h2>
-                        <p>Designed a web application that displays weather details for any city input by the user,
-                            utilizing JavaScript to fetch and display real-time data.</p>
-                        <a href="#"><i class="fa-regular fa-share-from-square"></i></a>
-                    </div>
-                </div>
-                <div class="work">
-                    <img src="img/work-6.jpg">
-                    <div class="layer">
-                        <h2>Run Monash</h2>
-                        <p>Implemented a small database in Oracle RDBMS based on a provided
-                            logical model case study using SQL. Populated the created tables
-                            with appropriate data and executed various DML commands.
-                            Additionally, made specified changes to the database structure
-                            using SQL to meet the given requirements.</p>
-                        <a href="#"><i class="fa-regular fa-share-from-square"></i></a>
-                    </div>
-                </div>
-            </div>
-            <a href="https://github.com/SubhanSaadatKhan" target="#" class="btn">Visit GitHub</a>
-        </div>
-    </div>
-
-    <!-- contact section -->
-    <div id="contact">
-        <div class="container">
-            <div class="row">
-                <div class="contact-left">
-                    <h1 class="subtitle text-shadow">Contact Me</h1>
-                    <p><i class="fas fa-paper-plane"></i>subhansaadat@gmail.com</p>
-                    <p><i class="fas fa-phone-square-alt"></i>+92-3109210801</p>
-                    <div class="social-icons">
-                        <a href="https://www.facebook.com/subhan.saadat.5/" target="#"><i
-                                class="fab fa-facebook"></i></a>
-                        <a href="https://www.instagram.com/subhansaadat/" target="#"><i
-                                class="fab fa-instagram"></i></a>
-                        <a href="https://www.linkedin.com/in/subhansaadatkhan/" target="#"><i
-                                class="fab fa-linkedin"></i></a>
-                    </div>
-                    <a href="Subhan_Saadat_Khan_Resume.pdf" download class="btn btn2">Download CV</a>
-                </div>
                 <div class="contact-right">
-                    <form name="submit-to-google-sheet">
-                        <input type="text" name="Name" placeholder="Your Name" required>
-                        <input type="email" name="Email" placeholder="Your Email" required>
-                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
-                        <button type="submit" class="btn btn2">Submit</button>
+                    <form name="submit-to-google-sheet" class="contact-form" aria-label="Contact form" novalidate>
+                        <div class="form-group">
+                            <label class="form-label mono" for="fname">Name</label>
+                            <input id="fname" type="text" name="Name" placeholder="Your name" autocomplete="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label mono" for="femail">Email</label>
+                            <input id="femail" type="email" name="Email" placeholder="your@email.com" autocomplete="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label mono" for="fmessage">Message</label>
+                            <textarea id="fmessage" name="Message" rows="5" placeholder="What's on your mind?" autocomplete="off"></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn mono">Send message &rarr;</button>
+                        <span id="msg" role="status" aria-live="polite"></span>
                     </form>
-                    <span id="msg"></span>
                 </div>
             </div>
         </div>
-        <div class="copyright">
-            <p>Copyright &copy Subhan. Build with <i class="fas fa-heart"></i> using HTML, CSS, and JavaScript</p>
-        </div>
-    </div>
+    </section>
 
-    <!-- contact form responses to google sheet -->
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-inner">
+            <span class="mono">Subhan Saadat Khan &middot; Erlangen, Germany</span>
+            <span class="mono footer-right">&copy; 2025</span>
+        </div>
+    </footer>
+
     <script>
-        const scriptURL = 'https://script.google.com/macros/s/AKfycbzf6lieENt-xwgiQRl22xkeYRjTSHXOwdOUviN-U8ZphBs1Bu9ypB6t9fVrSFs-OWGI/exec'
-        const form = document.forms['submit-to-google-sheet']
-        const msg = document.getElementById("msg")
+        // ── Google Sheets form submission ──────────────────────────────────
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzf6lieENt-xwgiQRl22xkeYRjTSHXOwdOUviN-U8ZphBs1Bu9ypB6t9fVrSFs-OWGI/exec';
+        const form = document.forms['submit-to-google-sheet'];
+        const msgEl = document.getElementById('msg');
 
         form.addEventListener('submit', e => {
-            e.preventDefault()
+            e.preventDefault();
+            const btn = form.querySelector('.submit-btn');
+            btn.textContent = 'Sending…';
+            btn.disabled = true;
+
             fetch(scriptURL, { method: 'POST', body: new FormData(form) })
-                .then(response => {
-                    msg.innerHTML = "Message sent successfully"
-                    setTimeout(function () {
-                        msg.innerHTML = ""
-                    }, 3000)
-                    form.reset()
+                .then(() => {
+                    msgEl.textContent = 'Message sent.';
+                    form.reset();
+                    setTimeout(() => { msgEl.textContent = ''; }, 5000);
                 })
-                .catch(error => console.error('Error!', error.message))
-        })
+                .catch(() => {
+                    msgEl.textContent = 'Something went wrong. Please email directly.';
+                })
+                .finally(() => {
+                    btn.textContent = 'Send message →';
+                    btn.disabled = false;
+                });
+        });
+
+        // ── Mobile menu ────────────────────────────────────────────────────
+        function toggleMenu(btn) {
+            const menu = document.getElementById('mobileMenu');
+            const isOpen = menu.classList.toggle('open');
+            btn.setAttribute('aria-expanded', isOpen);
+            menu.setAttribute('aria-hidden', !isOpen);
+        }
+
+        function closeMenu() {
+            const menu = document.getElementById('mobileMenu');
+            const btn = document.querySelector('.nav-toggle');
+            menu.classList.remove('open');
+            if (btn) btn.setAttribute('aria-expanded', 'false');
+            menu.setAttribute('aria-hidden', 'true');
+        }
+
+        // ── Close menu on outside click ────────────────────────────────────
+        document.addEventListener('click', e => {
+            const nav = document.getElementById('nav');
+            if (!nav.contains(e.target)) closeMenu();
+        });
     </script>
 
 </body>
-
 </html>
